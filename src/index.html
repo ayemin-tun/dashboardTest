@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- Add this to the <head> section of your HTML file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
 </head>
-<style>
-</style>
 
-<body>
-    <div class="bg-slate-950 h-screen w-52">
+<body class=" bg-gray-200">
+
+    <!-- Side Navigation bar -->
+    <aside class="bg-slate-950 h-screen w-52 fixed top-0 left-0 flex flex-col">
         <div class="divide-y  divide-slate-700 ">
             <h3 class="text-md text-center font-bold p-3 text-white">Viber Business</h3>
             <h3 class="text-md font-semi-bold py-4 mx-2 text-white truncate">
@@ -21,8 +22,8 @@
             </h3>
             <ul class=" mx-1 py-2">
                 <!-- Dashboard -->
-                <li
-                    class="text-base    text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                <li class=" text-base text-slate-300 hover:text-white cursor-pointer hover:bg-purple-700
+                hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa fa-dashboard" aria-hidden="true"></i>
                     </span>
@@ -31,7 +32,7 @@
 
                 <!-- Campaings -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa fa-dashboard" aria-hidden="true"></i>
                     </span>
@@ -40,7 +41,7 @@
 
                 <!-- Message Log -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </span>
@@ -49,7 +50,7 @@
 
                 <!-- Inbox -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-inbox"></i>
                     </span>
@@ -58,7 +59,7 @@
 
                 <!-- Url shorter -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-link" aria-hidden="true"></i>
                     </span>
@@ -67,7 +68,7 @@
 
                 <!-- Usage Summary -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </span>
@@ -76,7 +77,7 @@
 
                 <!-- Contact Group -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa fa-users" aria-hidden="true"></i>
                     </span>
@@ -85,7 +86,7 @@
 
                 <!-- Invoices -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-file-invoice"></i>
                     </span>
@@ -94,7 +95,7 @@
 
                 <!-- Settings -->
                 <li
-                    class="text-base  text-slate-300 hover: text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-gear"></i>
                     </span>
@@ -103,7 +104,7 @@
 
                 <!-- Developer -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-code"></i>
                     </span>
@@ -112,7 +113,7 @@
 
                 <!-- Support -->
                 <li
-                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md p-1 my-1">
+                    class="text-base   text-slate-300 hover:text-white  cursor-pointer hover:bg-purple-700 hover:shadow-lg rounded-md py-2 px-2 my-1">
                     <span class="icon mx-1">
                         <i class="fa-solid fa-square-phone"></i>
                     </span>
@@ -126,7 +127,180 @@
         </div>
 
 
-    </div>
+    </aside>
+
+    <div class="ml-52">
+        <div class="w-">
+            <!--top nav bar -->
+            <div class="flex bg-white shadow-md py-3 px-2 justify-between">
+                <div class="">
+                    <i class="fa fa-bars cursor-pointer pr-2  hover:text-purple-700" aria-hidden="true"></i>
+                    <span class="font-semibold text-xl">Home</span>
+                </div>
+                <div class=" w-32 text-right">
+                    <span class="mx-1"><i
+                            class="cursor-pointer hover:text-purple-700 fa-solid fa-right-from-bracket"></i></span>
+                    <span class="mx-1"><i class="cursor-pointer  hover:text-purple-700 fa-solid fa-expand"></i></span>
+                </div>
+            </div>
+            <!-- end nav -->
+
+            <!-- Dashboard title -->
+            <div class="flex px-2 py-3 justify-between">
+                <div>
+                    <h2 class="font-mono font-extrabold text-xl pl-2">Dashboard</h2>
+                </div>
+                <div>
+                    <span class="px-1 hover:text-purple-700 cursor-pointer text-blue-700">Home</span>/
+                    <span class="px-1 hover:text-purple-700 cursor-pointer">Dashboard</span>
+                </div>
+            </div>
+
+            <!-- main Dashboard screen -->
+            <div class="py-3 bg-white m-2 rounded-lg  justify-center divide-y">
+
+                <div class="md:flex w-full md:h-80 block">
+                    <!-- Network Operators -->
+                    <div class="md:w-8/12  flex items-center shadow-lg md:shadow-none md:py-0 py-10">
+                        <div class="w-full">
+                            <h3 class="my-2 font-sans text-xl font-semibold text-center">Network Operators</h3>
+                            <div class="justify-center w-full m-2 px-3 flex-wrap flex">
+                                <span class="flex items-center">
+                                    <div class="bg-blue-800 w-7 h-2 mx-2"></div>
+                                    MPT(0)
+                                </span>
+                                <span class="flex items-center">
+                                    <div class="bg-blue-500 w-7 h-2 mx-2"></div>
+                                    Telenor(0)
+                                </span>
+                                <span class="flex items-center">
+                                    <div class="bg-red-600 w-7 h-2 mx-2"></div>
+                                    Ooredoo(0)
+                                </span>
+                                <span class="flex items-center">
+                                    <div class="bg-yellow-500 w-7 h-2 mx-2"></div>
+                                    Mec(0)
+                                </span>
+                                <span class="flex items-center">
+                                    <div class="bg-red-600 w-7 h-2 mx-2"></div>
+                                    Mytel(0)
+                                </span>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Success/fail Rate -->
+                    <div class="md:w-6/12 flex items-center shadow-lg md:shadow-none md:py-0 py-10 ">
+                        <div class="w-full">
+                            <h3 class="my-2 font-sans text-xl font-semibold text-center">
+                                Success/ Failed Rate
+                            </h3>
+                            <div class="justify-center w-full m-2 px-3 flex-wrap flex">
+                                <span class="flex items-center">
+                                    <div class="bg-green-600 w-7 h-2 mx-2"></div>
+                                    Delievered (44.88%)
+                                </span>
+                                <span class="flex items-center">
+                                    <div class="bg-red-600 w-7 h-2 mx-2"></div>
+                                    <span class="line-through">UnDelievered (75.12%)</span>
+                                </span>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="w-48 h-48 bg-green-600 rounded-full">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full shadow-lg md:shadow-none md:pt-0 pt-3 ">
+                    <!-- Daily Outgoing Message -->
+                    <div class="w-full pt-3">
+                        <h3 class="my-2 font-sans text-xl font-semibold text-center">
+                            Daily Outgoing Message
+                        </h3>
+                        <div class="justify-center w-full m-2 px-3 flex-wrap flex">
+                            <span class="flex items-center">
+                                <div class="bg-blue-700 w-7 h-2 mx-2"></div>
+                                <span>Total Submittion</span>
+                            </span>
+                            <span class="flex items-center">
+                                <div class="bg-green-700 w-7 h-2 mx-2"></div>
+                                <span>Total Succeed</span>
+                            </span>
+                            <span class="flex items-center">
+                                <div class="bg-red-700 w-7 h-2 mx-2"></div>
+                                <span>Total Failed</span>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="w-full p-3 ">
+                        <table class="table-auto w-full border">
+                            <thead>
+                                <tr class="border">
+                                    <th>Song</th>
+                                    <th>Artist</th>
+                                    <th>Year</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border my-4">
+                                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                                    <td>Malcolm Lockyer</td>
+                                    <td>1961</td>
+                                </tr>
+                                <tr class="border">
+                                    <td>Witchy Woman</td>
+                                    <td>The Eagles</td>
+                                    <td>1972</td>
+                                </tr>
+                                <tr class="border my-4">
+                                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                                    <td>Malcolm Lockyer</td>
+                                    <td>1961</td>
+                                </tr>
+                                <tr class="border">
+                                    <td>Witchy Woman</td>
+                                    <td>The Eagles</td>
+                                    <td>1972</td>
+                                </tr>
+                                <tr class="border my-4">
+                                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                                    <td>Malcolm Lockyer</td>
+                                    <td>1961</td>
+                                </tr>
+                                <tr class="border">
+                                    <td>Witchy Woman</td>
+                                    <td>The Eagles</td>
+                                    <td>1972</td>
+                                </tr>
+                                <tr class="border">
+                                    <td>Shining Star</td>
+                                    <td>Earth, Wind, and Fire</td>
+                                    <td>1975</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 </html>
